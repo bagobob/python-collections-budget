@@ -22,12 +22,12 @@ class BudgetList:
 
 
 def main():
-    my_budget_list = BudgetList(1200)
+    myBudgetList = BudgetList(1200)
     expenses = Expense.Expenses()
     expenses.read_expenses("data/spending_data.csv")
     for expense in expenses.list:
-        my_budget_list.append(expense.amount)
-    print(f'The count of all expenses: {len(my_budget_list)}')
+        myBudgetList.append(expense.amount)
+    print('The count of all expenses:' + str(len(myBudgetList)))
 
 
 if __name__ == "__main__":
